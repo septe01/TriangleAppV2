@@ -1,6 +1,9 @@
 bundler_args: --retry 5
 language: swift
 osx_image: xcode14
+cache:
+    directories:
+     - /home/travis/.rvm/
 addons:
   homebrew:
     packages:
