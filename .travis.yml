@@ -1,16 +1,6 @@
 bundler_args: --retry 5
 language: swift
 osx_image: xcode14
-cache:
-    directories:
-     - /home/travis/.rvm/
-addons:
-  homebrew:
-    packages:
-      - beanstalk
-      update: true
-    casks:
-    - dotnet-sdk
 xcode_project: TriangleAppV2.xcodeproj # path to your xcodeproj folder done
 xcode_scheme: TriangleAppV2
 xcode_destination: platform=iOS Simulator,OS=16.0,name=iPhone 14 Pro
