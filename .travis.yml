@@ -1,3 +1,7 @@
+before_install:
+  - gem install cocoapods -v '0.32.1'
+rvm: 1.9.3
+bundler_args: --retry 5
 language: swift
 osx_image: xcode14
 xcode_project: TriangleAppV2.xcodeproj # path to your xcodeproj folder done
