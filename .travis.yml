@@ -5,11 +5,12 @@ xcode_project: TriangleAppV2.xcodeproj # path to your xcodeproj folder done
 xcode_scheme: TriangleAppV2
 xcode_destination: platform=iOS Simulator,OS=16.0,name=iPhone 14 Pro
 # install: travis_wait 30 mvn install
-cache:
-    directories:
-     - /home/travis/.rvm/
 addons:
   homebrew:
     packages:
       - beanstalk
       update: true
+
+# cache:
+#     directories:
+#      - /home/travis/.rvm/
